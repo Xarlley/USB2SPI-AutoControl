@@ -84,7 +84,7 @@ def auto_click_buttons():
         command_edit.set_focus()
         time.sleep(0.5)
         data = read_data_from_bin_file()
-        send_keys("aa")
+        send_keys(data)
 
         # 点击 'Write to device' 按钮
         main_window['Do write'].click()
