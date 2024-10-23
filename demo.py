@@ -68,7 +68,7 @@ main_window['Connect'].click()
 print("11")
 edit_control = main_window.child_window(control_type="Edit", found_index=0)
 
-def read_data_from_bin_file()
+def read_data_from_bin_file():
     '''
     Define your function that read your bin file.
     '''
