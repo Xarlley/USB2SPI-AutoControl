@@ -1,0 +1,342 @@
+Dialog - 'SPI读写演示程序<---->设备未连接'    (L842, T467, R1719, B926)
+['Dialog', 'SPI读写演示程序<---->设备未连接', 'SPI读写演示程序<---->设备未连接Dialog']
+child_window(title="SPI读写演示程序<---->设备未连接", control_type="Window")
+   |
+   | Button - '连接'    (L1629, T515, R1689, B536)
+   | ['连接', '连接Button', 'Button', 'Button0', 'Button1']
+   | child_window(title="连接", auto_id="1000", control_type="Button")
+   |
+   | GroupBox - '设置'    (L873, T507, R1230, B609)
+   | ['设置', 'GroupBox', '设置GroupBox', '设置0', '设置1', 'GroupBox0', 'GroupBox1']
+   | child_window(title="设置", control_type="Group")
+   |
+   | Button - '设置'    (L1174, T578, R1222, B599)
+   | ['设置2', '设置Button', 'Button2', '设置Button0', '设置Button1']
+   | child_window(title="设置", auto_id="1002", control_type="Button")
+   |
+   | ComboBox - ''    (L939, T525, R998, B545)
+   | ['ComboBox', '工作频率:ComboBox', 'ComboBox0', 'ComboBox1']
+   | child_window(auto_id="1007", control_type="ComboBox")
+   |    |
+   |    | Static - ''    (L3, T3, R39, B17)
+   |    | ['Static', 'Static0', 'Static1']
+   |    |
+   |    | Button - '打开'    (L979, T527, R996, B543)
+   |    | ['打开Button', '打开', 'Button3', '打开Button0', '打开Button1', '打开0', '打开1']
+   |    | child_window(title="打开", auto_id="DropDown", control_type="Button")
+   |
+   | Static - '工作频率:'    (L882, T530, R938, B542)
+   | ['工作频率:Static', '工作频率:', 'Static2']
+   | child_window(title="工作频率:", control_type="Text")
+   |
+   | GroupBox - '写'    (L1285, T615, R1690, B899)
+   | ['GroupBox2', '写GroupBox', '写']
+   | child_window(title="写", control_type="Group")
+   |
+   | GroupBox - '读'    (L873, T614, R1278, B899)
+   | ['读GroupBox', '读', 'GroupBox3']
+   | child_window(title="读", control_type="Group")
+   |
+   | Button - '执行'    (L1075, T630, R1122, B651)
+   | ['执行Button', '执行', 'Button4', '执行Button0', '执行Button1', '执行0', '执行1']
+   | child_window(title="执行", auto_id="1009", control_type="Button")
+   |
+   | Static - '命令参数'    (L900, T633, R950, B645)
+   | ['命令参数', '命令参数Static', 'Static3', '命令参数0', '命令参数1', '命令参数Static0', '命令参数Static1']
+   | child_window(title="命令参数", control_type="Text")
+   |
+   | Edit - '命令参数'    (L964, T630, R1024, B651)
+   | ['命令参数Edit', 'Edit', 'Edit0', 'Edit1', '命令参数Edit0', '命令参数Edit1']
+   | child_window(title="命令参数", auto_id="1011", control_type="Edit")
+   |
+   | Static - '数据长度'    (L900, T659, R950, B671)
+   | ['数据长度Static', 'Static4', '数据长度']
+   | child_window(title="数据长度", control_type="Text")
+   |
+   | Edit - '数据长度'    (L963, T659, R1023, B680)
+   | ['数据长度Edit', 'Edit2', '数据长度Edit0', '数据长度Edit1']
+   | child_window(title="数据长度", auto_id="1012", control_type="Edit")
+   |
+   | Button - '清除'    (L1140, T629, R1191, B650)
+   | ['清除', 'Button5', '清除Button', '清除0', '清除1', '清除Button0', '清除Button1']
+   | child_window(title="清除", auto_id="1013", control_type="Button")
+   |
+   | Static - '已读计数'    (L1116, T665, R1166, B677)
+   | ['已读计数Static', '已读计数', 'Static5']
+   | child_window(title="已读计数", control_type="Text")
+   |
+   | Edit - '已读计数'    (L1294, T687, R1681, B891)
+   | ['已读计数Edit', '命令参数Edit2', 'Edit3']
+   | child_window(title="已读计数", auto_id="1010", control_type="Edit")
+   |    |
+   |    | ScrollBar - '垂直滚动条'    (L1662, T689, R1679, B889)
+   |    | ['ScrollBar', '垂直滚动条ScrollBar', '垂直滚动条', 'ScrollBar0', 'ScrollBar1', '垂直滚动条ScrollBar0', '垂直滚动条ScrollBar1', '垂直滚动条0', '垂直滚动条1']
+   |    | child_window(title="垂直滚动条", auto_id="NonClientVerticalScrollBar", control_type="ScrollBar")
+   |    |    |
+   |    |    | Button - '上一行'    (L1662, T689, R1679, B706)
+   |    |    | ['上一行Button', '上一行', 'Button6', '上一行Button0', '上一行Button1', '上一行0', '上一行1']
+   |    |    | child_window(title="上一行", auto_id="UpButton", control_type="Button")
+   |    |    |
+   |    |    | Button - '下一行'    (L1662, T872, R1679, B889)
+   |    |    | ['下一行', '下一行Button', 'Button7', '下一行0', '下一行1', '下一行Button0', '下一行Button1']
+   |    |    | child_window(title="下一行", auto_id="DownButton", control_type="Button")
+   |
+   | Edit - ''    (L882, T687, R1269, B891)
+   | ['数据长度Edit2', 'Edit4']
+   | child_window(auto_id="1014", control_type="Edit")
+   |    |
+   |    | ScrollBar - '垂直滚动条'    (L1250, T689, R1267, B872)
+   |    | ['ScrollBar2', '垂直滚动条ScrollBar2', '垂直滚动条2']
+   |    | child_window(title="垂直滚动条", auto_id="NonClientVerticalScrollBar", control_type="ScrollBar")
+   |    |    |
+   |    |    | Button - '上一行'    (L1250, T689, R1267, B706)
+   |    |    | ['上一行Button2', '上一行2', 'Button8']
+   |    |    | child_window(title="上一行", auto_id="UpButton", control_type="Button")
+   |    |    |
+   |    |    | Button - '下一行'    (L1250, T855, R1267, B872)
+   |    |    | ['下一行2', '下一行Button2', 'Button9']
+   |    |    | child_window(title="下一行", auto_id="DownButton", control_type="Button")
+   |    |
+   |    | ScrollBar - '水平滚动条'    (L884, T872, R1250, B889)
+   |    | ['水平滚动条', '水平滚动条ScrollBar', 'ScrollBar3']
+   |    | child_window(title="水平滚动条", auto_id="NonClientHorizontalScrollBar", control_type="ScrollBar")
+   |    |    |
+   |    |    | Button - '左移一列'    (L884, T872, R901, B889)
+   |    |    | ['左移一列Button', '左移一列', 'Button10']
+   |    |    | child_window(title="左移一列", auto_id="UpButton", control_type="Button")
+   |    |    |
+   |    |    | Button - '右移一列'    (L1233, T872, R1250, B889)
+   |    |    | ['右移一列Button', '右移一列', 'Button11']
+   |    |    | child_window(title="右移一列", auto_id="DownButton", control_type="Button")
+   |    |
+   |    | Thumb - ''    (L1250, T872, R1267, B889)
+   |    | ['Thumb', '00000000Thumb']
+   |
+   | Button - '保存'    (L1209, T629, R1260, B650)
+   | ['保存Button', '保存', 'Button12']
+   | child_window(title="保存", auto_id="1016", control_type="Button")
+   |
+   | Button - '执行'    (L1461, T627, R1508, B648)
+   | ['执行Button2', '执行2', 'Button13']
+   | child_window(title="执行", auto_id="1017", control_type="Button")
+   |
+   | Static - '命令参数'    (L1305, T638, R1355, B650)
+   | ['命令参数2', '命令参数Static2', 'Static6']
+   | child_window(title="命令参数", control_type="Text")
+   |
+   | Edit - '命令参数'    (L1368, T632, R1428, B653)
+   | ['命令参数Edit3', 'Edit5']
+   | child_window(title="命令参数", auto_id="1018", control_type="Edit")
+   |
+   | Button - '清除'    (L1527, T627, R1578, B648)
+   | ['清除2', 'Button14', '清除Button2']
+   | child_window(title="清除", auto_id="1020", control_type="Button")
+   |
+   | Static - '已写计数'    (L1464, T663, R1514, B675)
+   | ['已写计数Static', 'Static7', '已写计数']
+   | child_window(title="已写计数", control_type="Text")
+   |
+   | Button - '载入'    (L1594, T627, R1645, B648)
+   | ['载入Button', 'Button15', '载入']
+   | child_window(title="载入", auto_id="1022", control_type="Button")
+   |
+   | Button - '关于'    (L1629, T590, R1689, B611)
+   | ['关于Button', '关于', 'Button16']
+   | child_window(title="关于", auto_id="1024", control_type="Button")
+   |
+   | ComboBox - ''    (L939, T551, R999, B571)
+   | ['ComboBox2', '工作模式:ComboBox']
+   | child_window(auto_id="1008", control_type="ComboBox")
+   |    |
+   |    | Static - ''    (L3, T3, R40, B17)
+   |    | ['Static8']
+   |    |
+   |    | Button - '打开'    (L980, T553, R997, B569)
+   |    | ['打开Button2', '打开2', 'Button17']
+   |    | child_window(title="打开", auto_id="DropDown", control_type="Button")
+   |
+   | Static - '工作模式:'    (L882, T555, R938, B567)
+   | ['工作模式:Static', '工作模式:', 'Static9']
+   | child_window(title="工作模式:", control_type="Text")
+   |
+   | Button - '开始触发'    (L1629, T566, R1689, B587)
+   | ['开始触发Button', '开始触发', 'Button18']
+   | child_window(title="开始触发", auto_id="1034", control_type="Button")
+   |
+   | GroupBox - 'GPIO'    (L1503, T510, R1625, B611)
+   | ['GPIO', 'GroupBox4', 'GPIOGroupBox', 'GPIO0', 'GPIO1']
+   | child_window(title="GPIO", control_type="Group")
+   |
+   | ComboBox - 'GPIO'    (L1296, T525, R1382, B545)
+   | ['GPIO2', 'ComboBox3', 'GPIOComboBox']
+   | child_window(title="GPIO", auto_id="1023", control_type="ComboBox")
+   |    |
+   |    | Static - 'GPIO'    (L3, T3, R66, B17)
+   |    | ['GPIO3', 'GPIOStatic', 'Static10']
+   |    | child_window(title="GPIO", control_type="Text")
+   |    |
+   |    | Button - '打开'    (L1363, T527, R1380, B543)
+   |    | ['打开Button3', '打开3', 'Button19']
+   |    | child_window(title="打开", auto_id="DropDown", control_type="Button")
+   |
+   | Static - '00000000'    (L1188, T666, R1247, B678)
+   | ['00000000Static', '00000000', 'Static11', '00000000Static0', '00000000Static1', '000000000', '000000001']
+   | child_window(title="00000000", auto_id="1037", control_type="Text")
+   |
+   | Static - '00000000'    (L1527, T663, R1607, B675)
+   | ['00000000Static2', '000000002', 'Static12']
+   | child_window(title="00000000", auto_id="1038", control_type="Text")
+   |
+   | CheckBox - 'LSB优先'    (L1023, T584, R1082, B599)
+   | ['LSB优先CheckBox', 'CheckBox', 'LSB优先', 'CheckBox0', 'CheckBox1']
+   | child_window(title="LSB优先", auto_id="1039", control_type="CheckBox")
+   |
+   | GroupBox - '触发'    (L1234, T509, R1500, B608)
+   | ['触发', 'GroupBox5', '触发GroupBox']
+   | child_window(title="触发", control_type="Group")
+   |
+   | Static - '方向：'    (L1509, T533, R1547, B545)
+   | ['方向：Static', '方向：', 'Static13']
+   | child_window(title="方向：", control_type="Text")
+   |
+   | Edit - '方向：'    (L1543, T527, R1578, B548)
+   | ['方向：Edit', 'Edit6']
+   | child_window(title="方向：", auto_id="1005", control_type="Edit")
+   |
+   | Static - '值：'    (L1512, T561, R1538, B573)
+   | ['值：', '值：Static', 'Static14']
+   | child_window(title="值：", control_type="Text")
+   |
+   | Edit - '值：'    (L1545, T557, R1580, B578)
+   | ['值：Edit', 'Edit7']
+   | child_window(title="值：", auto_id="1015", control_type="Edit")
+   |
+   | Button - '配置'    (L1585, T527, R1618, B548)
+   | ['配置Button', '配置', 'Button20']
+   | child_window(title="配置", auto_id="1019", control_type="Button")
+   |
+   | Button - '写入'    (L1585, T557, R1618, B578)
+   | ['写入Button', '写入', 'Button21']
+   | child_window(title="写入", auto_id="1025", control_type="Button")
+   |
+   | Button - 'SPI测试'    (L1629, T540, R1689, B561)
+   | ['SPI测试Button', 'SPI测试', 'Button22']
+   | child_window(title="SPI测试", auto_id="1003", control_type="Button")
+   |
+   | CheckBox - '16bit'    (L883, T584, R937, B599)
+   | ['CheckBox2', '16bitCheckBox', '16bit']
+   | child_window(title="16bit", auto_id="1033", control_type="CheckBox")
+   |
+   | CheckBox - '直接方式'    (L1095, T584, R1160, B599)
+   | ['直接方式', '直接方式CheckBox', 'CheckBox3']
+   | child_window(title="直接方式", auto_id="1041", control_type="CheckBox")
+   |
+   | CheckBox - '从模式'    (L951, T584, R1005, B599)
+   | ['从模式', '从模式CheckBox', 'CheckBox4']
+   | child_window(title="从模式", auto_id="1036", control_type="CheckBox")
+   |
+   | Edit - ''    (L1078, T554, R1113, B575)
+   | ['CommandEnd:Edit', 'Edit8']
+   | child_window(auto_id="1006", control_type="Edit")
+   |
+   | Static - 'CS Get Low:'    (L1009, T531, R1077, B543)
+   | ['CS Get Low:', 'Static15', 'CS Get Low:Static']
+   | child_window(title="CS Get Low:", control_type="Text")
+   |
+   | Edit - 'CS Get Low:'    (L1078, T527, R1113, B548)
+   | ['CS Get Low:Edit', 'Edit9']
+   | child_window(title="CS Get Low:", auto_id="1021", control_type="Edit")
+   |
+   | Edit - ''    (L1188, T527, R1223, B548)
+   | ['Each Frame:Edit', 'Edit10']
+   | child_window(auto_id="1026", control_type="Edit")
+   |
+   | Static - 'CommandEnd:'    (L1009, T557, R1077, B569)
+   | ['CommandEnd:', 'CommandEnd:Static', 'Static16']
+   | child_window(title="CommandEnd:", control_type="Text")
+   |
+   | Static - 'Each Frame:'    (L1119, T530, R1187, B542)
+   | ['Each Frame:', 'Each Frame:Static', 'Static17']
+   | child_window(title="Each Frame:", control_type="Text")
+   |
+   | Static - 'Data End:'    (L1120, T557, R1188, B569)
+   | ['Data End:', 'Data End:Static', 'Static18']
+   | child_window(title="Data End:", control_type="Text")
+   |
+   | Edit - 'Data End:'    (L1297, T552, R1338, B573)
+   | ['Data End:Edit', 'Edit11', 'Data End:Edit0', 'Data End:Edit1']
+   | child_window(title="Data End:", auto_id="1027", control_type="Edit")
+   |
+   | Edit - ''    (L1188, T552, R1223, B573)
+   | ['Data End:Edit2', 'Edit12']
+   | child_window(auto_id="1028", control_type="Edit")
+   |
+   | ComboBox - ''    (L1344, T552, R1383, B572)
+   | ['ComboBoxdemo.py - USB2SPI-AutoControl - Visual Studio Code', 'ComboBoxstorage.py - user_system [SSH: 123.249.38.83] - Visual Studio Code', 'Data End:ComboBox', 'ComboBox任务栏', 'ComboBoxSPI读写演示程序<---->设备未连接', 'ComboBoxKimi.ai - 帮你看更大的世界 - Google Chrome', 'ComboBoxpcm_h5_msg', 'ComboBox4', 'ComboBox管理员: Anaconda Prompt (Anaconda3) - python  demo.py', 'ComboBoxProgram Manager']
+   | child_window(auto_id="1029", control_type="ComboBox")
+   |    |
+   |    | Static - ''    (L3, T3, R19, B17)
+   |    | ['Static19']
+   |    |
+   |    | Button - '打开'    (L1364, T554, R1381, B570)
+   |    | ['打开Button4', '打开4', 'Button23']
+   |    | child_window(title="打开", auto_id="DropDown", control_type="Button")
+   |
+   | Static - '触发大小：'    (L1390, T531, R1452, B543)
+   | ['触发大小：Static', '触发大小：', 'Static20']
+   | child_window(title="触发大小：", control_type="Text")
+   |
+   | Static - '触发次数:'    (L1389, T555, R1445, B567)
+   | ['触发次数:', '触发次数:Static', 'Static21']
+   | child_window(title="触发次数:", control_type="Text")
+   |
+   | Edit - '触发次数:'    (L1449, T525, R1490, B546)
+   | ['触发大小：Edit', 'Edit13']
+   | child_window(title="触发次数:", auto_id="1030", control_type="Edit")
+   |
+   | Edit - ''    (L1449, T554, R1490, B575)
+   | ['触发次数:Edit', 'Edit14']
+   | child_window(auto_id="1031", control_type="Edit")
+   |
+   | Static - 'Actions:'    (L1255, T584, R1300, B596)
+   | ['Actions:Static', 'Actions:', 'Static22', 'Actions:0', 'Actions:1', 'Actions:Static0', 'Actions:Static1']
+   | child_window(title="Actions:", control_type="Text")
+   |
+   | ComboBox - 'Actions:'    (L1312, T581, R1384, B601)
+   | ['ComboBox5', 'Actions:2', 'Actions:ComboBox']
+   | child_window(title="Actions:", auto_id="1032", control_type="ComboBox")
+   |    |
+   |    | Static - 'Actions:'    (L3, T3, R52, B17)
+   |    | ['Actions:Static2', 'Actions:3', 'Static23']
+   |    | child_window(title="Actions:", control_type="Text")
+   |    |
+   |    | Button - '打开'    (L1365, T583, R1382, B599)
+   |    | ['打开Button5', '打开5', 'Button24']
+   |    | child_window(title="打开", auto_id="DropDown", control_type="Button")
+   |
+   | Button - '设置'    (L1413, T581, R1461, B602)
+   | ['设置3', '设置Button2', 'Button25']
+   | child_window(title="设置", auto_id="1004", control_type="Button")
+   |
+   | RadioButton - 'GPIO'    (L1243, T528, R1287, B543)
+   | ['RadioButton', 'GPIO4', 'GPIORadioButton', 'RadioButton0', 'RadioButton1']
+   | child_window(title="GPIO", auto_id="1040", control_type="RadioButton")
+   |
+   | RadioButton - 'Timer'    (L1243, T558, R1294, B573)
+   | ['RadioButton2', 'Timer', 'TimerRadioButton']
+   | child_window(title="Timer", auto_id="1042", control_type="RadioButton")
+   |
+   | TitleBar - ''    (L866, T470, R1711, B498)
+   | ['TitleBar']
+   |    |
+   |    | Menu - '系统'    (L850, T475, R872, B497)
+   |    | ['Menu', '系统', '系统Menu', '系统0', '系统1']
+   |    | child_window(title="系统", auto_id="MenuBar", control_type="MenuBar")
+   |    |    |
+   |    |    | MenuItem - '系统'    (L850, T475, R872, B497)
+   |    |    | ['MenuItem', '系统2', '系统MenuItem']
+   |    |    | child_window(title="系统", control_type="MenuItem")
+   |    |
+   |    | Button - '关闭'    (L1678, T468, R1712, B498)
+   |    | ['关闭Button', '关闭', 'Button26']
+   |    | child_window(title="关闭", control_type="Button")
